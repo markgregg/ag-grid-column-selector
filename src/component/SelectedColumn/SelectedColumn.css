@@ -1,0 +1,41 @@
+.csSelectedColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #edebeb;
+  padding: 2px;
+  width: 200px;
+}
+
+.csSelectedColumnIconGroup {
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+  margin-right: 10px;
+}
+
+.csSelectedColumnIcon {
+  align-items: center;
+  display: flex;
+}
+
+.csSelectedColumnIcon:hover {
+  background-color: var(--var-smart-search-main);
+  color: var(--var-smart-search-background);
+}
+
+.csSelectedColumnIcon:active {
+  background-color: var(--var-smart-search-faded);
+}
+
+.csSelectedColumnTitle {
+  flex-grow: 1;
+  user-select: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.csSelectedColumnThumb {
+  align-items: center;
+  display: flex;
+}

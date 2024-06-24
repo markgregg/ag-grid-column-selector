@@ -1,0 +1,27 @@
+@import '../../general/common.css';
+
+.csAvailableColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #edebeb;
+  padding: 2px;
+  width: 200px;
+}
+
+.csAvailableColumnCheckBox {
+  align-items: center;
+  display: flex;
+}
+
+.csAvailableColumnTitle {
+  flex-grow: 1;
+  user-select: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.csAvailableColumnThumb {
+  align-items: center;
+  display: flex;
+}

@@ -1,0 +1,35 @@
+.csSearchBox {
+  border-top: 2px solid var(--var-smart-search-smoke);
+  border-left: 2px solid var(--var-smart-search-smoke);
+  border-bottom: 2px solid var(--var-smart-search-stone);
+  border-right: 2px solid var(--var-smart-search-stone);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.csSearchBox:hover {
+  border: 2px solid var(--var-smart-search-icon);
+}
+
+.csSearchBox:focus-within {
+  border: 2px solid var(--var-smart-search-focus);
+}
+
+.csSearchBox:focus {
+  outline: none;
+  border: 2px solid var(--var-smart-search-focus);
+}
+
+.csSearchBox input {
+  flex-grow: 1;
+  padding: 2px;
+  margin: 2px;
+  outline: none;
+  border: none;
+}
+
+.csSearchBox input:focus input:hover {
+  outline: none;
+  border: none;
+}

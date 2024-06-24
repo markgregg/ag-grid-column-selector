@@ -1,0 +1,110 @@
+@import '../../general/common.css';
+
+.agGridColumnSelectorAnchor {
+  position: relative;
+}
+
+.agGridColumnSelectorMain {
+  display: flex;
+  border-top: 2px solid var(--var-smart-search-smoke);
+  border-left: 2px solid var(--var-smart-search-smoke);
+  border-bottom: 2px solid var(--var-smart-search-stone);
+  border-right: 2px solid var(--var-smart-search-stone);
+  border-radius: 5px;
+  background: var(--var-smart-search-background);
+  color: var(--var-smart-search-main);
+  align-items: center;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.73);
+  flex-direction: column;
+  padding: 10px;
+  min-height: 360px;
+  flex-grow: 1;
+}
+
+.agGridColumnSelectorHeader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0 15px;
+}
+
+.agGridColumnSelectorTitle {
+  flex-grow: 1;
+  align-self: flex-start;
+  font-weight: bold;
+  user-select: none;
+}
+
+.agGridColumnSelectorClose {
+  height: 18px;
+}
+
+.agGridColumnSelectorClose:hover {
+  background-color: var(--var-smart-search-main);
+  color: var(--var-smart-search-background);
+}
+
+.agGridColumnSelectorClose:active {
+  background-color: var(--var-smart-search-faded);
+}
+
+.agGridColumnSelectorContent {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  font-size: small;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.agGridColumnSelectorFooter {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 15px;
+  width: 100%;
+}
+
+.agGridColumnSelectorButton {
+  height: 24px;
+  display: flex;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--var-smart-search-tool-tip);
+  color: white;
+  align-items: center;
+  user-select: none;
+}
+
+.agGridColumnSelectorButton:hover {
+  background-color: var(--var-smart-search-smoke);
+}
+
+.agGridColumnSelectorButton:active {
+  background-color: var(--var-smart-search-icon);
+}
+
+.agGridColumnSelectorApply {
+  height: 24px;
+  display: flex;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--var-smart-search-choosen);
+  color: white;
+  align-items: center;
+  user-select: none;
+}
+
+.agGridColumnSelectorApply:hover {
+  background-color: #cacf00;
+}
+
+.agGridColumnSelectorApply:active {
+  background-color: #909159;
+}
+
+.agGridColumnSelectorResetDiv {
+  flex-grow: 1;
+}
