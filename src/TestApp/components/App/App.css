@@ -1,3 +1,5 @@
+@import '../../../general/common.css';
+
 .mainContainer {
   position: absolute;
   left: 5%;
@@ -47,5 +49,15 @@
 }
 
 .columnAddButton {
-  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--var-smart-search-tool-tip);
+  color: var(--var-smart-search-background);
+  min-width: 24px;
+  border-radius: 5px;
+}
+
+.columnAddButton:hover {
+  background-color: #444444;
 }

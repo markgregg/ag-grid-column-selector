@@ -52,7 +52,7 @@ const getCusor = (mouseAction: MouseAction) => {
     case 'SE-Size':
       return 'se-resize';
     default:
-      return 'n-resize';
+      return 'auto';
   }
 };
 
@@ -279,13 +279,13 @@ export default function DraggableContainer({
       style={
         position !== defaultPosition
           ? {
-              position: 'fixed',
-              top: position.y,
-              left: position.x,
-              height: position.h,
-              width: position.w,
-              cursor: getCusor(preprosedMouseAction),
-            }
+            position: 'fixed',
+            top: position.y,
+            left: position.x,
+            height: position.h,
+            width: position.w,
+            cursor: getCusor(preprosedMouseAction),
+          }
           : {}
       }
     >

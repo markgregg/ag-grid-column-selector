@@ -92,11 +92,11 @@ export default function App(): JSX.Element {
             keyboardActivityTimeout={1000}
           />
         </div>
-        <div className="columnAddButton">
-          {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-          <button type="button" onClick={() => setColumnsVisible(true)}>
-            <TbColumns />
-          </button>
+        <div
+          className="columnAddButton"
+          onClick={() => setColumnsVisible(true)}
+        >
+          <TbColumns />
         </div>
       </div>
       <div className="mainContent">
